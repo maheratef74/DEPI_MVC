@@ -1,0 +1,58 @@
+﻿<h1> Welcom in my view</h1>
+
+<style>
+    h1 {
+        background-color:cyan;
+        font-weight:800;
+        color:red;
+    }
+</style>
+
+<script>
+    // alert("Helloooooooooooo!!!");
+    console.log("lllllll")
+</script>
+
+@{
+    int x = 5;
+
+    int y = x + 7;
+
+    Console.WriteLine("Jajaajajaa");
+}
+
+<!--Inline Code-->
+
+<h2>
+    @x
+</h2>
+
+<!--Conditional Statement-->
+
+@if(x > y)
+{
+    <h2>
+        x = @x is greater than y = @y
+    </h2>
+}
+else
+{
+    <h2>
+        y = @y is greater than x = @x
+    </h2>
+}
+
+<!--Loop Statement-->
+
+<ul>
+    @* <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li> *@
+
+    @for(int i = 0; i < 10; i++)
+    {
+        <li>Index = @i</li>
+    }
+</ul>

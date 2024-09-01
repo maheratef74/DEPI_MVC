@@ -1,0 +1,47 @@
+﻿@model List<GetAllProductsVM>
+
+@* https://getbootstrap.com/docs/4.0/content/tables/ *@
+@* Data   List<Product>   ➡️➡️  Model *@
+
+@foreach (var item in Model)
+{
+    <h2>
+        Id = @item.Id ,,, Name = @item.Name
+    </h2>
+}
+
+@* @foreach (Product item in Model)
+{
+    <h2>
+        Id = @item.Id ,,, Name = @item.Name
+    </h2>
+} *@
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Image</th>
+            <th scope="col">Department Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="col">@item.Id</th>
+                <th scope="col">@item.Name</th>
+                <th scope="col">@item.Description</th>
+                <th scope="col">@item.Price</th>
+                <th scope="col">
+                    <img src="/Images/@item.Image" style="width:50px;height:auto;" />
+                </th>
+                <th scope="col">@item.DepartmentId</th>
+            </tr>
+        }
+    </tbody>
+</table>
