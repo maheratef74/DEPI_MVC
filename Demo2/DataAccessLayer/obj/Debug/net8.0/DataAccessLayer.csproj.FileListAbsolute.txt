@@ -1,0 +1,15 @@
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.runtimeconfig.json
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
+D:\My Courses\MVC\S1e\4\DEPI_MVC\Demo2\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll

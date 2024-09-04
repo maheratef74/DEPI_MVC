@@ -20,7 +20,7 @@ namespace PresentationLayer
                 options
                     .UseSqlServer(connectionString)
                     .LogTo(Console.WriteLine, LogLevel.Information);
-            });
+            }); // ServiceLifetime.Transient
 
             // Register service in container
             builder.Services.AddScoped<IProductRepository, ProductRepository>();

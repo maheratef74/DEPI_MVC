@@ -75,81 +75,81 @@ namespace DataAccessLayer.Repositories
         }
 
         #region Concurrency
-        public void AddProduct_Concurrency()
-        {
-            var task1 = Task.Factory.StartNew(() => AddProduct1());
-            var task2 = Task.Factory.StartNew(() => AddProduct2());
+        //public void AddProduct_Concurrency()
+        //{
+        //    var task1 = Task.Factory.StartNew(() => AddProduct1());
+        //    var task2 = Task.Factory.StartNew(() => AddProduct2());
 
-            Task
-                .WhenAll(task1, task2)
-                .ContinueWith(t => Console.WriteLine("Finished Saving both Concurrently!"));
-        }
-        public void AddProduct1()
-        {
-            var product = new Product
-            {
-                Id = 5,
-                Name = "Iphone 6s",
-                Description = "Pro Max",
-                Image = "3.jpg",
-                Price = 50_000
-            };
-            _dbContext.Products.Add(product);
-            _dbContext.SaveChanges();
+        //    Task
+        //        .WhenAll(task1, task2)
+        //        .ContinueWith(t => Console.WriteLine("Finished Saving both Concurrently!"));
+        //}
+        //public void AddProduct1()
+        //{
+        //    var product = new Product
+        //    {
+        //        Id = 5,
+        //        Name = "Iphone 6s",
+        //        Description = "Pro Max",
+        //        Image = "3.jpg",
+        //        Price = 50_000
+        //    };
+        //    _dbContext.Products.Add(product);
+        //    _dbContext.SaveChanges();
 
-        }
-        public void AddProduct2()
-        {
-            var product = new Product
-            {
-                Id = 5,
-                Name = "Iphone 7",
-                Description = "Pro",
-                Image = "4.jpg",
-                Price = 60_000
-            };
-            _dbContext.Products.Add(product);
-            _dbContext.SaveChanges();
-        }
+        //}
+        //public void AddProduct2()
+        //{
+        //    var product = new Product
+        //    {
+        //        Id = 5,
+        //        Name = "Iphone 7",
+        //        Description = "Pro",
+        //        Image = "4.jpg",
+        //        Price = 60_000
+        //    };
+        //    _dbContext.Products.Add(product);
+        //    _dbContext.SaveChanges();
+        //}
         #endregion
 
         #region Concurrency_Async
-        public async Task AddProduct_Concurrency_Async()
-        {
-            var task1 = AddProduct1_Async();
-            var task2 = AddProduct2_Async();
+        //public async Task AddProduct_Concurrency_Async()
+        //{
+        //    var task1 = AddProduct1_Async();
+        //    var task2 = AddProduct2_Async();
 
-            Task
-                .WhenAll(task1, task2)
-                .ContinueWith(t => Console.WriteLine("Finished Saving both Concurrently!"));
-        }
-        public async Task AddProduct1_Async()
-        {
-            var product = new Product
-            {
-                Id = 5,
-                Name = "Iphone 6s",
-                Description = "Pro Max",
-                Image = "3.jpg",
-                Price = 50_000
-            };
-            await _dbContext.Products.AddAsync(product);
-            await _dbContext.SaveChangesAsync();
+        //    Task
+        //        .WhenAll(task1, task2)
+        //        .ContinueWith(t => Console.WriteLine("Finished Saving both Concurrently!"));
+        //}
+        //public async Task AddProduct1_Async()
+        //{
+        //    var product = new Product
+        //    {
+        //        Id = 5,
+        //        Name = "Iphone 6s",
+        //        Description = "Pro Max",
+        //        Image = "3.jpg",
+        //        Price = 50_000
+        //    };
+        //    await _dbContext.Products.AddAsync(product);
+        //    await _dbContext.SaveChangesAsync();
 
-        }
-        public async Task AddProduct2_Async()
-        {
-            var product = new Product
-            {
-                Id = 5,
-                Name = "Iphone 7",
-                Description = "Pro",
-                Image = "4.jpg",
-                Price = 60_000
-            };
-            await _dbContext.Products.AddAsync(product);
-            await _dbContext.SaveChangesAsync();
-        }
+        //}
+        //public async Task AddProduct2_Async()
+        //{
+        //    var product = new Product
+        //    {
+        //        Id = 5,
+        //        Name = "Iphone 7",
+        //        Description = "Pro",
+        //        Image = "4.jpg",
+        //        Price = 60_000
+        //    };
+        //    await _dbContext.Products.AddAsync(product);
+        //    await _dbContext.SaveChangesAsync();
+        //}
         #endregion
     }
 }

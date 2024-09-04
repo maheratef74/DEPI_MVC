@@ -40,22 +40,22 @@ namespace BusinessLayer.Services
         }
         public async Task AddProduct(CreateProductDto productDto)
         {
-            //var maxId = await _productRepository.GetMaxId();
+            var maxId = await _productRepository.GetMaxId();
 
             // CreateProductDto(BL)   ➡️➡️  Product(DAL)
 
-            //var product = new Product()
-            //{
-            //    Id =  1,
-            //    Name = productDto.Name,
-            //    Price = productDto.Price,
-            //    Description = productDto.Description,
-            //    DepartmentId = productDto.DepartmentId,
-            //    Image = productDto.Image
-            //};
+            var product = new Product()
+            {
+                Id = maxId + 1,
+                Name = productDto.Name,
+                Price = productDto.Price,
+                Description = productDto.Description,
+                DepartmentId = productDto.DepartmentId,
+                Image = productDto.Image
+            };
 
-            //_productRepository.AddProduct(product);
-            await _productRepository.AddProduct_Concurrency_Async();
+            _productRepository.AddProduct(product);
+            //await _productRepository.AddProduct_Concurrency_Async();
         }
         public async Task UpdateProduct(UpdateProductDto productDto)
         {

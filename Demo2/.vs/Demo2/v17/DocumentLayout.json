@@ -1,81 +1,565 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\My Courses\\MVC\\S1e\\3\\Demo2\\",
+  "WorkspaceRootPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\my courses\\mvc\\s1e\\3\\demo2\\presentationlayer\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\3\\demo2\\dataaccesslayer\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|d:\\my courses\\mvc\\s1e\\3\\demo2\\businesslayer\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\businesslayer\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\3\\demo2\\dataaccesslayer\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\entities\\orderproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\orderproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer_databasefirst\\models\\productsalesview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|solutionrelative:dataaccesslayer_databasefirst\\models\\productsalesview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer_databasefirst\\models\\applicationdbcontextprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|solutionrelative:dataaccesslayer_databasefirst\\models\\applicationdbcontextprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer_databasefirst\\models\\iapplicationdbcontextprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|solutionrelative:dataaccesslayer_databasefirst\\models\\iapplicationdbcontextprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer_databasefirst\\models\\sp_getcustomerordersresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|solutionrelative:dataaccesslayer_databasefirst\\models\\sp_getcustomerordersresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer_databasefirst\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|solutionrelative:dataaccesslayer_databasefirst\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer_databasefirst\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|solutionrelative:dataaccesslayer_databasefirst\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer_databasefirst\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|solutionrelative:dataaccesslayer_databasefirst\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer_databasefirst\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EA46F8-4F36-4467-AE8A-EF9719AED931}|DataAccessLayer_DatabaseFirst\\DataAccessLayer_DatabaseFirst.csproj|solutionrelative:dataaccesslayer_databasefirst\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\migrations\\20240903180859_create_table_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\20240903180859_create_table_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240903182059_Create_Tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\Migrations\\20240903182059_Create_Tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\configuration\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\configuration\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\migrations\\20240903175843_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\20240903175843_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240903181639_Create_Tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\Migrations\\20240903181639_Create_Tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\configuration\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\configuration\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\configuration\\orderproductconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\configuration\\orderproductconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\configuration\\departmentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\configuration\\departmentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\configuration\\customerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\configuration\\customerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\presentationlayer\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\presentationlayer\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\my courses\\mvc\\s1e\\4\\depi_mvc\\demo2\\dataaccesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedHeight": 253,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\3\\Demo2\\DataAccessLayer\\Repositories\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\IProductRepository.cs",
-              "ToolTip": "D:\\My Courses\\MVC\\S1e\\3\\Demo2\\DataAccessLayer\\Repositories\\IProductRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\IProductRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA7wBMAAAAwAAAA",
+              "DocumentIndex": 2,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\BusinessLayer\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Services\\ProductService.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\BusinessLayer\\Services\\ProductService.cs",
+              "RelativeToolTip": "BusinessLayer\\Services\\ProductService.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAMwCsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T14:11:09.008Z"
+              "WhenOpened": "2024-08-31T13:50:54.574Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\3\\Demo2\\PresentationLayer\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\My Courses\\MVC\\S1e\\3\\Demo2\\PresentationLayer\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "PresentationLayer\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAuwBMAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\ProductRepository.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\ProductRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAwwA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T13:54:25.712Z",
+              "WhenOpened": "2024-08-31T13:52:23.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\3\\Demo2\\DataAccessLayer\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\ProductRepository.cs",
-              "ToolTip": "D:\\My Courses\\MVC\\S1e\\3\\Demo2\\DataAccessLayer\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\ProductRepository.cs",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAmwHwAAAAIAAAA",
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Product.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Product.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Product.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAawA4AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T13:52:23.475Z"
+              "WhenOpened": "2024-09-03T16:14:19.871Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\3\\Demo2\\BusinessLayer\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Services\\ProductService.cs",
-              "ToolTip": "D:\\My Courses\\MVC\\S1e\\3\\Demo2\\BusinessLayer\\Services\\ProductService.cs",
-              "RelativeToolTip": "BusinessLayer\\Services\\ProductService.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAqwDkAAAAMAAAA",
+              "DocumentIndex": 5,
+              "Title": "OrderProduct.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\OrderProduct.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\OrderProduct.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\OrderProduct.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\OrderProduct.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwBIAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T13:50:54.574Z"
+              "WhenOpened": "2024-09-03T16:22:36.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Order.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Order.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Order.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T16:21:11.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\IProductRepository.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\IProductRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T14:11:09.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\Program.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\Program.cs",
+              "RelativeToolTip": "PresentationLayer\\Program.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAewBkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T16:13:04.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBEAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T16:14:50.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductSalesView.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\ProductSalesView.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer_DatabaseFirst\\Models\\ProductSalesView.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\ProductSalesView.cs",
+              "RelativeToolTip": "DataAccessLayer_DatabaseFirst\\Models\\ProductSalesView.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:31:46.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContextProcedures.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\ApplicationDbContextProcedures.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer_DatabaseFirst\\Models\\ApplicationDbContextProcedures.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\ApplicationDbContextProcedures.cs",
+              "RelativeToolTip": "DataAccessLayer_DatabaseFirst\\Models\\ApplicationDbContextProcedures.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwCQAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:32:45.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IApplicationDbContextProcedures.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\IApplicationDbContextProcedures.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer_DatabaseFirst\\Models\\IApplicationDbContextProcedures.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\IApplicationDbContextProcedures.cs",
+              "RelativeToolTip": "DataAccessLayer_DatabaseFirst\\Models\\IApplicationDbContextProcedures.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:34:24.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "sp_GetCustomerOrdersResult.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\sp_GetCustomerOrdersResult.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer_DatabaseFirst\\Models\\sp_GetCustomerOrdersResult.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\sp_GetCustomerOrdersResult.cs",
+              "RelativeToolTip": "DataAccessLayer_DatabaseFirst\\Models\\sp_GetCustomerOrdersResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:32:28.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer_DatabaseFirst\\Models\\Order.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\Order.cs",
+              "RelativeToolTip": "DataAccessLayer_DatabaseFirst\\Models\\Order.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:32:22.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer_DatabaseFirst\\Models\\Department.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\Department.cs",
+              "RelativeToolTip": "DataAccessLayer_DatabaseFirst\\Models\\Department.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:32:15.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer_DatabaseFirst\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DataAccessLayer_DatabaseFirst\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAcwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:31:31.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Class1.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer_DatabaseFirst\\Class1.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer_DatabaseFirst\\Class1.cs",
+              "RelativeToolTip": "DataAccessLayer_DatabaseFirst\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:26:42.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20240903182059_Create_Tables.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240903182059_Create_Tables.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20240903182059_Create_Tables.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240903182059_Create_Tables.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20240903182059_Create_Tables.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAuwJEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:20:59.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20240903175843_InitialCreate.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240903175843_InitialCreate.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20240903175843_InitialCreate.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240903175843_InitialCreate.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20240903175843_InitialCreate.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAYwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T17:58:43.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20240903180859_Create_Table_Product.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240903180859_Create_Table_Product.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20240903180859_Create_Table_Product.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240903180859_Create_Table_Product.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20240903180859_Create_Table_Product.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAABoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:08:59.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderConfiguration.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Configuration\\OrderConfiguration.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Configuration\\OrderConfiguration.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Configuration\\OrderConfiguration.cs",
+              "RelativeToolTip": "DataAccessLayer\\Configuration\\OrderConfiguration.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAIA5wB8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T17:01:27.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAxwI4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:00:41.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20240903181639_Create_Tables.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240903181639_Create_Tables.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20240903181639_Create_Tables.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240903181639_Create_Tables.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20240903181639_Create_Tables.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAADwvy4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:16:39.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Department.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Department.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Department.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAtwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T16:20:48.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Customer.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Customer.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Customer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T16:19:26.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductConfiguration.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Configuration\\ProductConfiguration.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Configuration\\ProductConfiguration.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Configuration\\ProductConfiguration.cs",
+              "RelativeToolTip": "DataAccessLayer\\Configuration\\ProductConfiguration.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAwwCYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T17:01:20.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "OrderProductConfiguration.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Configuration\\OrderProductConfiguration.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Configuration\\OrderProductConfiguration.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Configuration\\OrderProductConfiguration.cs",
+              "RelativeToolTip": "DataAccessLayer\\Configuration\\OrderProductConfiguration.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAD4vxgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T17:01:36.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DepartmentConfiguration.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Configuration\\DepartmentConfiguration.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Configuration\\DepartmentConfiguration.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Configuration\\DepartmentConfiguration.cs",
+              "RelativeToolTip": "DataAccessLayer\\Configuration\\DepartmentConfiguration.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAD4vx4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T17:01:45.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CustomerConfiguration.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Configuration\\CustomerConfiguration.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Configuration\\CustomerConfiguration.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Configuration\\CustomerConfiguration.cs",
+              "RelativeToolTip": "DataAccessLayer\\Configuration\\CustomerConfiguration.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwB4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T17:01:13.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "PresentationLayer\\appsettings.Development.json",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\appsettings.Development.json",
+              "RelativeToolTip": "PresentationLayer\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-03T17:52:23.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Class1.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Class1.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\Class1.cs",
+              "RelativeToolTip": "DataAccessLayer\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T16:11:54.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAQwF4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T13:54:25.712Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 91,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
