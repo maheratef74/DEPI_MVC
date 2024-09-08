@@ -74,6 +74,20 @@ namespace DataAccessLayer.Repositories
             }
         }
 
+        public async Task<Product> GetProductById(int id)
+        {
+            // Lazy Loading
+            //return await _dbContext.Products
+            //    .FirstOrDefaultAsync(product => product.Id == id);
+            // Eager Loading
+            return await _dbContext.Products
+                .Include(product => product.Department)
+                .Include(product => product.OrderProducts)
+                .FirstOrDefaultAsync(product => product.Id == id); // execute query
+            // Select * from Products Where Id = id 
+        }
+
+
         #region Concurrency
         //public void AddProduct_Concurrency()
         //{

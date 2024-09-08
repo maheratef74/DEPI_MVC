@@ -4111,11 +4111,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\karim.ali\\.nuget\\packages\\",
-      "outputPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\obj\\",
+      "outputPath": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\karim.ali\\AppData\\Roaming\\NuGet\\NuGet.Config",

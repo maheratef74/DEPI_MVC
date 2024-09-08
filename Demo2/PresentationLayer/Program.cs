@@ -24,16 +24,73 @@ namespace PresentationLayer
 
             // Register service in container
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+            builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+
+
             builder.Services.AddScoped<IProductService, ProductService>();
-            //builder.Services.AddScoped<IProductService, ProductService2>();
+            builder.Services.AddScoped<ICustomerService, CustomerService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<IFileService, FileService>();
+
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(20); // Configure the lifetime of a session
+            });
+
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews(); // .AddSessionStateTempDataProvider()
 
             var app = builder.Build();
             #endregion
 
             #region PipeLine
+
+            // My Middlewares
+
+            //app.Use(async (context, next) =>
+            //{
+            //    // logic to be executed in the first direction
+            //    await context.Response.WriteAsync("Middleware 1 \n");
+
+            //    await next.Invoke();
+
+            //    // logic to be executed in the second direction
+            //    await context.Response.WriteAsync("Middleware 1_1 \n");
+
+            //});
+
+            //app.Use(async (context, next) =>
+            //{
+            //    // logic to be executed in the first direction
+            //    await context.Response.WriteAsync("Middleware 2 \n");
+
+            //    await next.Invoke();
+
+            //    // logic to be executed in the second direction
+            //    await context.Response.WriteAsync("Middleware 2_2 \n");
+
+            //});
+
+            //app.Use(async (context, next) =>
+            //{
+            //    // logic to be executed in the first direction
+            //    await context.Response.WriteAsync("Middleware 3 \n");
+
+            //    await next.Invoke();
+
+            //    // logic to be executed in the second direction
+            //    await context.Response.WriteAsync("Middleware 3_3 \n");
+
+            //});
+
+
+            //app.Run(async (context) =>
+            //{
+            //    await context.Response.WriteAsync("Terminate \n");
+            //});
+
+
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
@@ -43,7 +100,10 @@ namespace PresentationLayer
 
             app.UseRouting();
 
+
             app.UseAuthorization();
+
+            app.UseSession();
 
             // Route
             // localhost:7845 / Controller_Name / Action_Name

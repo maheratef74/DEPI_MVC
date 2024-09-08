@@ -34,7 +34,7 @@ namespace BusinessLayer.Services
         }
         public async  Task<GetProductDetailsDTO?> GetById(int id)
         {
-            var product = await  _productRepository.GetById(id);
+            var product = await  _productRepository.GetProductById(id);
             var productDto = product.ToDto();
             return productDto;
         }

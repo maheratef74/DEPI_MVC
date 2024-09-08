@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\PresentationLayer.csproj": {}
+    "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\PresentationLayer\\PresentationLayer.csproj": {}
   },
   "projects": {
-    "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj": {
+    "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\karim.ali\\.nuget\\packages\\",
-        "outputPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\BusinessLayer\\obj\\",
+        "outputPath": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\karim.ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj"
+              "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -75,14 +75,14 @@
         }
       }
     },
-    "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\karim.ali\\.nuget\\packages\\",
-        "outputPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\DataAccessLayer\\obj\\",
+        "outputPath": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\karim.ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -152,14 +152,14 @@
         }
       }
     },
-    "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\PresentationLayer.csproj": {
+    "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\PresentationLayer\\PresentationLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\PresentationLayer.csproj",
+        "projectUniqueName": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\PresentationLayer\\PresentationLayer.csproj",
         "projectName": "PresentationLayer",
-        "projectPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\PresentationLayer.csproj",
+        "projectPath": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\PresentationLayer\\PresentationLayer.csproj",
         "packagesPath": "C:\\Users\\karim.ali\\.nuget\\packages\\",
-        "outputPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\PresentationLayer\\obj\\",
+        "outputPath": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\PresentationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\karim.ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -177,8 +177,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "D:\\My Courses\\MVC\\S1e\\4\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj"
+              "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "D:\\My Courses\\MVC\\S1e\\5\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj"
               }
             }
           }
