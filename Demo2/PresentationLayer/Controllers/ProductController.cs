@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.DTOs;
 using BusinessLayer.Services;
 using DataAccessLayer.Entities;
+using DataAccessLayer.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using PresentationLayer.Models;
 
@@ -10,11 +11,13 @@ namespace PresentationLayer.Controllers
     {
         private readonly IProductService _productService;
         private readonly IFileService _fileService;
+        private readonly IDepartmentRepository _departmentRepository;
 
-        public ProductController(IProductService productService, IFileService fileService)
+        public ProductController(IProductService productService, IFileService fileService, IDepartmentRepository departmentRepository)
         {
          _productService = productService;
             _fileService = fileService;
+            _departmentRepository = departmentRepository;
         }
         // 1) Catch Request
 
@@ -68,34 +71,47 @@ namespace PresentationLayer.Controllers
 
         //  /product/create
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            var departments = await _departmentRepository.GetAllAsync();
+            ViewBag.Departments = departments.ToList();
             return View();
         }
         [HttpPost]
-        public IActionResult Create(CreateProductActionRequest product)
+        public async Task<IActionResult> Create(CreateProductActionRequest product)
         {
-
-
-            string uniqueFileName = _fileService.UploadFile(product.Image, "Images");
-
-            // 2- CreateProductActionRequest ( PL )   ➡️➡️  CreateProductDto ( BL )
-
-            var productDto = new CreateProductDto
+            if (product.DepartmentId == 0)
             {
-                Name = product.Name,
-                Price = product.Price,
-                Description = product.Description,
-                DepartmentId = product.DepartmentId,
-                Image = uniqueFileName
-            };
+                ModelState.AddModelError("DepartmentId", "Department Id is not valid");
+            }
 
-            // 3- Call ProductService.AddProduct(CreateProductDto)
+            if(ModelState.IsValid)
+            {
+                string uniqueFileName = _fileService.UploadFile(product.Image, "Images");
 
-            _productService.AddProduct(productDto);
+                // 2- CreateProductActionRequest ( PL )   ➡️➡️  CreateProductDto ( BL )
 
-            //return RedirectToAction("Index");
-            return RedirectToAction(nameof(Index));
+                var productDto = new CreateProductDto
+                {
+                    Name = product.Name,
+                    Price = product.Price,
+                    Description = product.Description,
+                    DepartmentId = product.DepartmentId,
+                    Image = uniqueFileName
+                };
+
+                // 3- Call ProductService.AddProduct(CreateProductDto)
+
+                _productService.AddProduct(productDto);
+
+                //return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
+            }
+
+            var departments = await _departmentRepository.GetAllAsync();
+            ViewBag.Departments = departments.ToList();
+
+            return View(product);
         }
 
 

@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Services;
+﻿using BusinessLayer.DTOs;
+using BusinessLayer.Services;
 using Microsoft.AspNetCore.Mvc;
 using PresentationLayer.Models.Order.ActionRequest;
 using PresentationLayer.Models.Order.VM;
@@ -47,6 +48,27 @@ namespace PresentationLayer.Controllers
         {
             await _orderService.CreateOrder(request.ToDto());
             return RedirectToAction("Index");
+        }
+
+        // /Product/Update/2
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            // Get Order
+            var order = await _orderService.GetOrderById(id);
+            return View(order);
+        }
+
+        // /Product/Update/3
+        [HttpPost]
+        public async Task<IActionResult> Update(int id, UpdateOrderActionRequest request)
+        {
+            // Update Order
+            var updateOrderDto = request.ToDto();
+            updateOrderDto.Id = id;
+            await _orderService.UpdateOrder(updateOrderDto);
+            //return RedirectToAction("Index","Product");
+            return RedirectToAction("Update","Order", new { id = id });
         }
 
     }

@@ -39,7 +39,26 @@ namespace DataAccessLayer.Repositories
 
         public async Task<Order?> GetById(int id)
         {
-            return await _dbContext.Orders.FirstOrDefaultAsync(order => order.Id == id);
+            return await _dbContext.Orders
+                .Include(order => order.OrderProducts)
+                    .ThenInclude(op => op.Product)
+                .FirstOrDefaultAsync(order => order.Id == id);
+            // Orders
+            // Left Join OrderProducts
+            // Inner Join Products
+
+            //var query = _dbContext.Orders
+            //    .Where(order => order.Rating > 2);
+
+            //query = query
+            //    .Include(order => order.OrderProducts)
+            //    .Include(order => order.Customer);
+            // IQueryable vs IEnumerable
+
+            // IQueryable ➡️➡️ Tracking  ➡️➡️  Data still in Database
+            // IEnumerable ➡️➡️ Actual Execution of Query on Database ➡️➡️ Data in Memory
+
+            //var orders = await query.ToListAsync(); // ➡️➡️ Actual Execution of Query on Database
         }
 
         public async Task<int> GetMaxId()

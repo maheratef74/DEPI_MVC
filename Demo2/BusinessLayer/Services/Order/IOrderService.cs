@@ -10,5 +10,7 @@ namespace BusinessLayer.Services
     public interface IOrderService
     {
         Task CreateOrder(CreateOrderDto createOrderDto);
+        Task<OrderDetailsDto> GetOrderById(int id);
+        Task UpdateOrder(UpdateOrderDto updateOrderDto);
     }
 }

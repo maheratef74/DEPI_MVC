@@ -38,5 +38,29 @@ namespace BusinessLayer.Services
 
             await _orderRepository.SaveChanges();
         }
+
+        public async Task<OrderDetailsDto> GetOrderById(int id)
+        {
+            var order = await _orderRepository.GetById(id);
+            var orderDto = new OrderDetailsDto()
+            {
+                Id = order.Id,
+                Rating = order.Rating,
+                Review = order.Review,
+                OrderProducts = order.OrderProducts
+            };
+            return orderDto;
+        }
+
+        public async Task UpdateOrder(UpdateOrderDto updateOrderDto)
+        {
+            // Get Entity from DB
+            var order = await _orderRepository.GetById(updateOrderDto.Id);
+            // Update the Entity Properties
+            order.Review = updateOrderDto.Review;
+            order.Rating = updateOrderDto.Rating;
+            // Save Changes
+            await _orderRepository.SaveChanges();
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace DataAccessLayer.Repositories
         public async Task<List<Product>> GetAll()
         {
             return await _dbContext.Products
+                .Where(product => true)
                 .ToListAsync();  // execute query
             // Select * from Products
         }

@@ -26,6 +26,7 @@ namespace PresentationLayer
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<IOrderRepository, OrderRepository>();
             builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
 
             builder.Services.AddScoped<IProductService, ProductService>();
@@ -111,7 +112,7 @@ namespace PresentationLayer
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
-            //             / Product       /  Details     /  1
+            //             / Product       /  Details     /  1  
             app.Run(); 
             #endregion
         }

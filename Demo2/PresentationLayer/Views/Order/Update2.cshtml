@@ -1,0 +1,64 @@
+﻿@using PresentationLayer.Models.Order.ActionRequest
+@using PresentationLayer.Models
+@model UpdateOrderActionRequest
+
+@{
+    Layout = "_Layout";
+}
+
+@{
+    var OrderId = 2;
+    var products = new List<int>
+    {
+        1,2,3
+    };
+
+    var products2 = new List<ProductModel>()
+    {
+        new ProductModel{Id = 1, Name = "Product 1" },
+        new ProductModel{Id = 2, Name = "Product 2" },
+    };
+}
+
+@* Html Helper
+Tag Helper *@
+@* <form action="/Order/Update/@OrderId" method="post"> *@
+<form asp-action="Update" asp-controller="Order" asp-route-id="@OrderId" method="post">
+    <div>
+        <label for="Rating"></label>
+        @Html.Label("Rating")
+        <input type="number" name="Rating" id="Rating" value="@Model.Rating" class="form-control" style="color:red;" />
+        @Html.TextBox("Rating", Model.Rating, new {@class= "form-control", style="color:red;"})
+        @Html.TextBoxFor(model => model.Rating, new {@class= "form-control", style="color:red;"})
+
+        <input asp-for="Rating" class="form-control" style="color:red;"/>
+    </div>
+
+    <div>
+        <label for="Review"></label>
+        <input type="text" name="Review" id="Review" value="@Model.Review" />
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-success">Update</button>
+    </div>
+</form>
+
+
+@*
+
+<select multiple>
+    @foreach (var productId in products)
+    {
+        <option value="@productId">@productId</option>
+    }
+</select>
+
+*@
+
+
+
+
+@* <select asp-for="" asp-items="new SelectList(products,"Id","Name") multiple>
+</select> *@
+
