@@ -4,14 +4,14 @@ namespace PresentationLayer.Models.Order.ActionRequest
 {
     public class CreateOrderActionRequest
     {
-        public int customerId { get; set; }
-        public List<int> productIds { get; set; }
+        public int CustomerId { get; set; }
+        public Dictionary<int, int> ProductAmounts { get; set; }
         public CreateOrderDto ToDto()
         {
             return new CreateOrderDto
             {
-                CustomerId = customerId,
-                ProductIds = productIds
+                CustomerId = CustomerId,
+                ProductAmounts = ProductAmounts
             };
         }
     }

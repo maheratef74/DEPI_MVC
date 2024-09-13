@@ -88,6 +88,11 @@ namespace DataAccessLayer.Repositories
             // Select * from Products Where Id = id 
         }
 
+        public Product? FindProductByName(string name)
+        {
+            return _dbContext.Products.FirstOrDefault(product => product.Name == name);
+        }
+
 
         #region Concurrency
         //public void AddProduct_Concurrency()

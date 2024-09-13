@@ -71,6 +71,9 @@ namespace BusinessLayer.Services
             await _productRepository.Update(product);
         }
 
-        
+        public Product? GetProductByName(string name)
+        {
+            return _productRepository.FindProductByName(name);
+        }
     }
 }

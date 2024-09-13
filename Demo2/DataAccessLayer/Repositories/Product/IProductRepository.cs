@@ -17,6 +17,7 @@ namespace DataAccessLayer.Repositories
         Task Delete(int id);
         Task SaveChanges();
         Task<Product> GetProductById(int id);
+        Product? FindProductByName(string name);
         //public void AddProduct_Concurrency();
         //public Task AddProduct_Concurrency_Async();
     }

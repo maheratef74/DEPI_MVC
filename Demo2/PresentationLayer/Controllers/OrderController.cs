@@ -41,13 +41,17 @@ namespace PresentationLayer.Controllers
 
             ViewData["myCustomers"] = myCustomers;
 
-            return View(vm);
+            return View("Create2", vm);
         }
         [HttpPost]
         public async Task<IActionResult> Create(CreateOrderActionRequest request)
         {
-            await _orderService.CreateOrder(request.ToDto());
-            return RedirectToAction("Index");
+            if(ModelState.IsValid)
+            {
+                await _orderService.CreateOrder(request.ToDto());
+                return RedirectToAction("Index");
+            }
+            return View(request);
         }
 
         // /Product/Update/2

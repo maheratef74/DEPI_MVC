@@ -27,12 +27,13 @@ namespace BusinessLayer.Services
             // 🚩🚩 order.Id = 3
 
             // 2- Insert OrderProducts ( Child )
-            order.OrderProducts = createOrderDto.ProductIds
-                .Select(productId => new OrderProduct
+            order.OrderProducts = createOrderDto.ProductAmounts
+                .Where(product => product.Value > 0)
+                .Select(product => new OrderProduct
                 {
                     OrderId = order.Id,
-                    ProductId = productId,
-                    Amount = 1,
+                    ProductId = product.Key,
+                    Amount = product.Value,
                 })
                 .ToList();
 

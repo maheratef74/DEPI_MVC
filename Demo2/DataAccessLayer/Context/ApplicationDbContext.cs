@@ -22,7 +22,7 @@ namespace DataAccessLayer.Context
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder
-                    .UseSqlServer("Server = KARIM-ALI\\MSSQLSERVER01; Database= EcommerceSystem ; Integrated Security = True; TrustServerCertificate = True;");
+                    .UseSqlServer("Server=localhost\\MSSQLSERVER01;Database=Ecommerce_System;Trusted_Connection=True;");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -43,7 +43,8 @@ namespace PresentationLayer.Controllers
                 .Select(productDto => (GetAllProductsVM)productDto)
                 .ToList();
 
-            return View(productsList);
+            //return View(productsList);
+            return View("Index2", productsList);
 
         }
 
@@ -151,6 +152,43 @@ namespace PresentationLayer.Controllers
             _productService.UpdateProduct(udpateProductDto);
 
             return RedirectToAction(nameof(Details), new { id = productActionRequest.Id});
+        }
+
+        public IActionResult CheckName(string name)
+        {
+            var product = _productService.GetProductByName(name);
+            if (product == null)
+            {
+                return Json(true);
+            }
+
+            return Json(false);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetProductPartial(int id)
+        {
+            var productDto = await _productService.GetById(id);
+
+            if (productDto == null)
+            {
+                return NotFound();
+            }
+
+            var productVM = (GetProductDetailsVM)productDto;
+            // 4) Controller sends data to view
+            // return View(product); 
+            return PartialView("_ProductCardPartial", productVM);
+        }
+        [HttpPost]
+        public IActionResult GetProductPartial([FromBody] GetProductDetailsVM productVM)
+        {
+            if (productVM == null)
+            {
+                return BadRequest("Product data is missing");
+            }
+
+            return PartialView("_ProductCardPartial", productVM);
         }
     }
 }

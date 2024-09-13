@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.DTOs;
+using DataAccessLayer.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,7 @@ namespace BusinessLayer.Services
         Task AddProduct(CreateProductDto productDto);
 
         Task UpdateProduct(UpdateProductDto productDto);
+
+        Product? GetProductByName(string name);
     }
 }

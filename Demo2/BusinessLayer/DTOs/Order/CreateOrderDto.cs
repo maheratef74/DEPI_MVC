@@ -6,7 +6,7 @@ namespace BusinessLayer.DTOs
     {
         public DateTime Date { get; set; }
         public int CustomerId { get; set; }
-        public List<int> ProductIds { get; set; }
+        public Dictionary<int, int> ProductAmounts { get; set; }
     }
     public static class CreateOrderDtoExtensions
     {

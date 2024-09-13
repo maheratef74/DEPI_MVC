@@ -2,13 +2,4 @@
 
 @model GetProductDetailsVM
 
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="/Images/@Model.Image" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">@Model.Name</h5>
-        <p class="card-text">
-            Price = @Model.Price , @Model.Description
-        </p>
-        <a href="/product/index" class="btn btn-primary">Return to Index</a>
-    </div>
-</div>
+<partial name="_ProductCardPartial" model="Model">

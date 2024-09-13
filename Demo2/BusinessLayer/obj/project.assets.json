@@ -2848,11 +2848,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Courses\\MVC\\S1e\\6\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "D:\\My Courses\\MVC\\S1e\\6\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\karim.ali\\.nuget\\packages\\",
-      "outputPath": "D:\\My Courses\\MVC\\S1e\\6\\DEPI_MVC\\Demo2\\BusinessLayer\\obj\\",
+      "outputPath": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\karim.ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2870,8 +2870,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\My Courses\\MVC\\S1e\\6\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "D:\\My Courses\\MVC\\S1e\\6\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj"
+            "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }
@@ -2912,7 +2912,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

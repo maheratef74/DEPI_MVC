@@ -3,19 +3,6 @@
 @* https://getbootstrap.com/docs/4.0/content/tables/ *@
 @* Data   List<Product>   ➡️➡️  Model *@
 
-@foreach (var item in Model)
-{
-    <h2>
-        Id = @item.Id ,,, Name = @item.Name
-    </h2>
-}
-
-@* @foreach (Product item in Model)
-{
-    <h2>
-        Id = @item.Id ,,, Name = @item.Name
-    </h2>
-} *@
 
 
 <table class="table table-striped">
@@ -27,21 +14,57 @@
             <th scope="col">Price</th>
             <th scope="col">Image</th>
             <th scope="col">Department Id</th>
+            <th scope="col">Details</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
-                <th scope="col">@item.Id</th>
-                <th scope="col">@item.Name</th>
-                <th scope="col">@item.Description</th>
-                <th scope="col">@item.Price</th>
-                <th scope="col">
+                <td scope="col">@item.Id</td>
+                <td scope="col">@item.Name</td>
+                <td scope="col">@item.Description</td>
+                <td scope="col">@item.Price</td>
+                <td scope="col">
                     <img src="/Images/@item.Image" style="width:50px;height:auto;" />
-                </th>
-                <th scope="col">@item.DepartmentId</th>
+                </td>
+                <td scope="col">@item.DepartmentId</td>
+                <td scope="col">
+                    <button class="chooseButton btn btn-primary" data-id="@item.Id">Choose</button>
+                </td>
             </tr>
         }
     </tbody>
 </table>
+
+<div id="dynamicContent">
+    <p>Select a product to see details.</p>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const chooseButtons = document.querySelectorAll('.chooseButton');
+
+        chooseButtons.forEach(button => {
+            button.addEventListener('click', async function() {
+                debugger
+                const productId = this.getAttribute('data-id');
+
+                try {
+                    const response = await fetch(`/Product/GetProductPartial?id=${productId}`, { method: 'GET' })
+                    // const response = await fetch(`@Url.Action("GetProductPartial","Product")?id=${productId}`, { method: 'GET' })
+
+                    if(!response.ok) {
+                        throw new Error("Network response was not ok")
+                    }
+
+                    const result = await response.text();
+
+                    document.getElementById('dynamicContent').innerHTML = result;
+                } catch (error) {
+                    alert("Failed to retrieve product details");
+                }
+            })
+        })
+    })
+</script>
