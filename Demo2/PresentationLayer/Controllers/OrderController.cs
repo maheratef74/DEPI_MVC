@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.DTOs;
 using BusinessLayer.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PresentationLayer.Models.Order.ActionRequest;
 using PresentationLayer.Models.Order.VM;
@@ -56,10 +57,19 @@ namespace PresentationLayer.Controllers
 
         // /Product/Update/2
         [HttpGet]
+        [Authorize(Roles = UserRole.Customer)]
         public async Task<IActionResult> Update(int id)
         {
             // Get Order
             var order = await _orderService.GetOrderById(id);
+
+
+            // if (order.CustomerId != CurrentUser.Id)
+            // {
+            //      return RedirectToAction("NotAuthorized","Account");
+            // }
+
+
             return View(order);
         }
 

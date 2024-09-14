@@ -3,120 +3,32 @@
   "WorkspaceRootPath": "D:\\karim\\DEPI_MVC\\Demo2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\product\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\product\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\models\\order\\actionrequest\\createorderactionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\models\\order\\actionrequest\\createorderactionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|d:\\karim\\depi_mvc\\demo2\\businesslayer\\services\\order\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\order\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\order\\create2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\order\\create2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|d:\\karim\\depi_mvc\\demo2\\businesslayer\\dtos\\order\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\dtos\\order\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\models\\order\\vm\\createordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\models\\order\\vm\\createordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\models\\product\\vm\\productlistvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\models\\product\\vm\\productlistvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\models\\department\\vms\\departmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\models\\department\\vms\\departmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\karim\\depi_mvc\\demo2\\dataaccesslayer\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\product\\_productcardpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\product\\_productcardpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\karim\\depi_mvc\\demo2\\dataaccesslayer\\repositories\\product\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\product\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|d:\\karim\\depi_mvc\\demo2\\businesslayer\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\shared\\_navbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\shared\\_navbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|d:\\karim\\depi_mvc\\demo2\\businesslayer\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F884EED-D783-48DA-B806-185940F2F700}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\models\\product\\actionrequest\\createproductactionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\models\\product\\actionrequest\\createproductactionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\validators\\uniquenamevalidatorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\validators\\uniquenamevalidatorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\validators\\myemaildomainattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\validators\\myemaildomainattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\karim\\depi_mvc\\demo2\\dataaccesslayer\\repositories\\department\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\department\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\models\\product\\vm\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\models\\product\\vm\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,365 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 48,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create2.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Order\\Create2.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Order\\Create2.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Order\\Create2.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Order\\Create2.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T19:48:59.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateOrderActionRequest.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Order\\ActionRequest\\CreateOrderActionRequest.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Models\\Order\\ActionRequest\\CreateOrderActionRequest.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Order\\ActionRequest\\CreateOrderActionRequest.cs",
-              "RelativeToolTip": "PresentationLayer\\Models\\Order\\ActionRequest\\CreateOrderActionRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T19:48:07.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\OrderController.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "PresentationLayer\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAawDIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:10:51.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAADQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T17:46:40.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index2.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Product\\Index2.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Product\\Index2.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Product\\Index2.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Product\\Index2.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACAAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T18:46:43.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateOrderDto.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\DTOs\\Order\\CreateOrderDto.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\DTOs\\Order\\CreateOrderDto.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\DTOs\\Order\\CreateOrderDto.cs",
-              "RelativeToolTip": "BusinessLayer\\DTOs\\Order\\CreateOrderDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T19:59:51.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\Services\\Order\\OrderService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Services\\Order\\OrderService.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\Services\\Order\\OrderService.cs",
-              "RelativeToolTip": "BusinessLayer\\Services\\Order\\OrderService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAuwCgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T20:01:24.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateOrderVM.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Order\\VM\\CreateOrderVM.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Models\\Order\\VM\\CreateOrderVM.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Order\\VM\\CreateOrderVM.cs",
-              "RelativeToolTip": "PresentationLayer\\Models\\Order\\VM\\CreateOrderVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T19:48:16.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Department\\Index.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Department\\Index.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Department\\Index.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Department\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAuwCkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T19:23:34.288Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DepartmentVM.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Department\\VMs\\DepartmentVM.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Models\\Department\\VMs\\DepartmentVM.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Department\\VMs\\DepartmentVM.cs",
-              "RelativeToolTip": "PresentationLayer\\Models\\Department\\VMs\\DepartmentVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T19:15:42.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Order\\Create.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Order\\Create.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Order\\Create.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Order\\Create.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T17:10:51.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProductListVM.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Product\\VM\\ProductListVM.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Models\\Product\\VM\\ProductListVM.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Product\\VM\\ProductListVM.cs",
-              "RelativeToolTip": "PresentationLayer\\Models\\Product\\VM\\ProductListVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T19:35:39.861Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Department.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Department.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Department.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Department.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entities\\Department.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAwAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T19:12:52.248Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\DepartmentController.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "PresentationLayer\\Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwCYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T19:12:32.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T17:21:55.511Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\ProductController.cs",
               "RelativeToolTip": "PresentationLayer\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAD4v7kAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAA7wCUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:10:51.417Z",
+              "WhenOpened": "2024-09-14T14:33:44.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "_ProductCardPartial.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Product\\_ProductCardPartial.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Product\\_ProductCardPartial.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Product\\_ProductCardPartial.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Product\\_ProductCardPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T17:40:41.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Services\\ProductService.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\Services\\ProductService.cs",
-              "RelativeToolTip": "BusinessLayer\\Services\\ProductService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAIAwwCQAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Product\\VM\\LoginVM.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Models\\Product\\VM\\LoginVM.cs",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Product\\VM\\LoginVM.cs",
+              "RelativeToolTip": "PresentationLayer\\Models\\Product\\VM\\LoginVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:10:51.404Z",
+              "WhenOpened": "2024-09-14T14:03:37.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Repositories\\Product\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\Product\\ProductRepository.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Repositories\\Product\\ProductRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\Product\\ProductRepository.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAA5wFMAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:10:51.428Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\Services\\IProductService.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Services\\IProductService.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\BusinessLayer\\Services\\IProductService.cs",
-              "RelativeToolTip": "BusinessLayer\\Services\\IProductService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIAzwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:16:48.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Product\\Details.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Product\\Details.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Product\\Details.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Product\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T17:41:07.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T17:21:35.855Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "_NavbarPartial.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T17:25:21.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "MyEmailDomainAttribute.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Validators\\MyEmailDomainAttribute.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Validators\\MyEmailDomainAttribute.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Validators\\MyEmailDomainAttribute.cs",
-              "RelativeToolTip": "PresentationLayer\\Validators\\MyEmailDomainAttribute.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T16:43:28.549Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Product\\Create.cshtml",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-10T19:42:50.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CreateProductActionRequest.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Product\\ActionRequest\\CreateProductActionRequest.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Models\\Product\\ActionRequest\\CreateProductActionRequest.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Product\\ActionRequest\\CreateProductActionRequest.cs",
-              "RelativeToolTip": "PresentationLayer\\Models\\Product\\ActionRequest\\CreateProductActionRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T19:34:30.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UniqueNameValidatorAttribute.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Validators\\UniqueNameValidatorAttribute.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Validators\\UniqueNameValidatorAttribute.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Validators\\UniqueNameValidatorAttribute.cs",
-              "RelativeToolTip": "PresentationLayer\\Validators\\UniqueNameValidatorAttribute.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:01:50.538Z",
+              "WhenOpened": "2024-09-14T14:03:21.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\AccountController.cs*",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAQwFUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T14:02:44.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Program.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
               "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Program.cs",
               "RelativeToolTip": "PresentationLayer\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:08:15.374Z"
+              "WhenOpened": "2024-09-14T13:51:53.066Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "DepartmentRepository.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Repositories\\Department\\DepartmentRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\Department\\DepartmentRepository.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Repositories\\Department\\DepartmentRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\Department\\DepartmentRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T19:45:14.319Z"
+              "DocumentIndex": 3,
+              "Title": "_NavbarPartial.cshtml",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-14T15:06:18.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-14T15:02:50.739Z",
+              "EditorCaption": ""
             }
           ]
         }

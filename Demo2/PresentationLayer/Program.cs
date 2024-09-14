@@ -1,7 +1,9 @@
-using BusinessLayer.Services;
+﻿using BusinessLayer.Services;
 using DataAccessLayer.Context;
 using DataAccessLayer.Repositories;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using PresentationLayer.Controllers;
 
 namespace PresentationLayer
 {
@@ -33,6 +35,42 @@ namespace PresentationLayer
             builder.Services.AddScoped<ICustomerService, CustomerService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<IFileService, FileService>();
+
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.ExpireTimeSpan = TimeSpan.FromDays(1);
+                    options.LoginPath = "/Account/Login";
+                    options.AccessDeniedPath = "/Account/NotAuthorized";
+                });
+
+
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy(UserRole.Admin, policy =>
+                {
+                    policy.RequireRole(UserRole.Admin);
+                });
+
+                options.AddPolicy(UserRole.Customer, policy =>
+                {
+                    policy.RequireRole(UserRole.Customer);
+                });
+
+                options.AddPolicy(UserRole.Buyer, policy =>
+                {
+                    policy.RequireRole(UserRole.Buyer);
+                });
+
+                options.AddPolicy("AdminOrBuyer", policy =>
+                {
+                    policy.RequireRole(UserRole.Admin, UserRole.Buyer);
+                });
+            });
+            // 🚩🚩 If you are using more than way of authentication you can here specify which is the default
+            //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme) 
+            //    .AddCookie()
+            //    .AddOAuth();
 
             builder.Services.AddSession(options =>
             {
@@ -101,7 +139,12 @@ namespace PresentationLayer
 
             app.UseRouting();
 
+            app.UseAuthentication(); // reads user information from cookie coming in request  ===fills===>  HttpContext.User
 
+            // 🚩🚩  is a middleware component in the ASP.NET Core request pipeline that:
+            // ✅ Intercepts every request and checks if an authentication cookie is present.
+            // ✅ If the cookie is present, it decrypts the cookie and reconstructs the user's identity (claims).
+            // ✅ It attaches this identity to the HttpContext.User property, making the user's information (claims) available throughout the application.
             app.UseAuthorization();
 
             app.UseSession();

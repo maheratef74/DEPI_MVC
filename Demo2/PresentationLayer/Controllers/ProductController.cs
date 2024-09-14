@@ -2,11 +2,13 @@
 using BusinessLayer.Services;
 using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PresentationLayer.Models;
 
 namespace PresentationLayer.Controllers
 {
+    [Authorize] // Authentication
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
@@ -15,19 +17,23 @@ namespace PresentationLayer.Controllers
 
         public ProductController(IProductService productService, IFileService fileService, IDepartmentRepository departmentRepository)
         {
-         _productService = productService;
+            _productService = productService;
             _fileService = fileService;
             _departmentRepository = departmentRepository;
         }
         // 1) Catch Request
 
-        public int Add(int a , int b)
+        public int Add(int a, int b)
         {
             _productService.GetById(1);
             return a + b;
         }
         // 🚀/product/index
         [HttpGet]
+        //[Authorize(Roles = "Customer")] // Role-Based AuthoriZation
+        [Authorize(Roles = UserRole.Customer)] // Role-Based AuthoriZation
+
+        // access HttpContext.User ➡️ Claims ➡️ Role
         public async Task<IActionResult> Index()
         {
             // 2) Call Model
@@ -51,6 +57,8 @@ namespace PresentationLayer.Controllers
         // 🚀/product/details/:id    ✅  path variable
         // 🚀/product/details?id=✔️  ✅  query parameters
         [HttpGet]
+        //[AllowAnonymous]
+        [Authorize(Roles = UserRole.Customer)]
         public async Task<IActionResult> Details(int id)
         {
             // 2) Call Model
@@ -72,6 +80,9 @@ namespace PresentationLayer.Controllers
 
         //  /product/create
         [HttpGet]
+        //[Authorize("Admin")] // Role = Admin ✅
+        [Authorize("AdminOrBuyer")] // Role = Admin ✅ or Buyer ✅
+
         public async Task<IActionResult> Create()
         {
             var departments = await _departmentRepository.GetAllAsync();
