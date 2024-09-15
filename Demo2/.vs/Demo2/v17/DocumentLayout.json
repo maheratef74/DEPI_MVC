@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "D:\\karim\\DEPI_MVC\\Demo2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240914162953_Added_Identity_User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\Migrations\\20240914162953_Added_Identity_User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\karim\\depi_mvc\\demo2\\dataaccesslayer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\karim\\depi_mvc\\demo2\\dataaccesslayer\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|d:\\karim\\depi_mvc\\demo2\\dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C094B49-3B4F-4206-8260-0F492525CDFD}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB26F38F-1DF2-4D4C-BF5D-97EBF7D7C444}|PresentationLayer\\PresentationLayer.csproj|d:\\karim\\depi_mvc\\demo2\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,24 +58,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 48,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240914162953_Added_Identity_User.cs",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240914162953_Added_Identity_User.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20240914162953_Added_Identity_User.cs",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Migrations\\20240914162953_Added_Identity_User.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20240914162953_Added_Identity_User.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAQwLgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T16:29:53.256Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "PresentationLayer\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAA7wCUAAAAJAAAAAAAAAA==",
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Customer.cs",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\Customer.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T14:33:44.49Z",
+              "WhenOpened": "2024-09-14T16:28:12.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\User.cs",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Entities\\User.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T16:21:55.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAYwF0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T16:08:43.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAswDoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T14:33:44.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "LoginVM.cs",
               "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Models\\Product\\VM\\LoginVM.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Models\\Product\\VM\\LoginVM.cs",
@@ -68,33 +148,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "PresentationLayer\\Views\\Account\\Login.cshtml",
               "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "PresentationLayer\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwBcAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-14T14:03:21.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\AccountController.cs*",
-              "RelativeToolTip": "PresentationLayer\\Controllers\\AccountController.cs*",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAQwFUAAAARAAAAAAAAAA==",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T14:02:44.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwD4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T14:33:44.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Program.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
@@ -107,20 +200,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "_NavbarPartial.cshtml",
               "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
               "RelativeDocumentMoniker": "PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
               "ToolTip": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
               "RelativeToolTip": "PresentationLayer\\Views\\Shared\\_NavbarPartial.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABYAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAIBJwBYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-14T15:06:18.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "D:\\karim\\DEPI_MVC\\Demo2\\PresentationLayer\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "PresentationLayer\\Views\\Shared\\_LoginPartial.cshtml",

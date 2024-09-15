@@ -1,11 +1,12 @@
 ﻿using DataAccessLayer.Configuration;
 using DataAccessLayer.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 
 namespace DataAccessLayer.Context
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<User>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -88,6 +89,9 @@ namespace DataAccessLayer.Context
 
             // From my App Code
             // Call Function or Stored Prod , send parameters
+
+
+            base.OnModelCreating(modelBuilder);
 
         }
     }
