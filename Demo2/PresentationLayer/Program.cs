@@ -1,7 +1,9 @@
 ﻿using BusinessLayer.Services;
 using DataAccessLayer.Context;
+using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PresentationLayer.Controllers;
 
@@ -36,41 +38,22 @@ namespace PresentationLayer
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<IFileService, FileService>();
 
-            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(options =>
-                {
-                    options.ExpireTimeSpan = TimeSpan.FromDays(1);
-                    options.LoginPath = "/Account/Login";
-                    options.AccessDeniedPath = "/Account/NotAuthorized";
-                });
+            
+            // 🚩🚩 Identity Authentication Configuration
 
-
-            builder.Services.AddAuthorization(options =>
-            {
-                options.AddPolicy(UserRole.Admin, policy =>
+            builder.Services
+                .AddIdentity<User, IdentityRole>(options =>
                 {
-                    policy.RequireRole(UserRole.Admin);
-                });
+                    options.Password.RequireDigit = true;
+                })
+                .AddEntityFrameworkStores<ApplicationDbContext>();
 
-                options.AddPolicy(UserRole.Customer, policy =>
+            builder.Services
+                .ConfigureApplicationCookie(options =>
                 {
-                    policy.RequireRole(UserRole.Customer);
+                    options.LoginPath = "/Account/Login"; // The User is not authenticated
+                    options.AccessDeniedPath = "/Account/AccessDenied"; // The User is not authorized to acess some resource
                 });
-
-                options.AddPolicy(UserRole.Buyer, policy =>
-                {
-                    policy.RequireRole(UserRole.Buyer);
-                });
-
-                options.AddPolicy("AdminOrBuyer", policy =>
-                {
-                    policy.RequireRole(UserRole.Admin, UserRole.Buyer);
-                });
-            });
-            // 🚩🚩 If you are using more than way of authentication you can here specify which is the default
-            //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme) 
-            //    .AddCookie()
-            //    .AddOAuth();
 
             builder.Services.AddSession(options =>
             {

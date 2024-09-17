@@ -57,7 +57,6 @@ namespace PresentationLayer.Controllers
 
         // /Product/Update/2
         [HttpGet]
-        [Authorize(Roles = UserRole.Customer)]
         public async Task<IActionResult> Update(int id)
         {
             // Get Order

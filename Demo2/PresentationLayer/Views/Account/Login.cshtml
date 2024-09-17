@@ -1,27 +1,36 @@
-﻿@using PresentationLayer.Models.Product.VM
-
-@model LoginVM
+﻿@using PresentationLayer.Models.User
+@model LoginActionRequest
 
 @{
     ViewData["Title"] = "Login";
 }
+<hr />
 
-<h1>Login</h1>
-
-<form asp-controller="Account" asp-action="Login" method="post">
-        <div asp-validation-summary="All"></div>
-
-        <div>
-            <input asp-for="Name" />
-            <span asp-validation-for="Name"></span>
-        </div>
-
-        <div>
-            <input asp-for="Password" />
-            <span asp-validation-for="Password"></span>
-        </div>
-
-        <input type="hidden" value="@ViewBag.ReturnUrl" name="returnUrl"/>
-
-        <input type="submit" value="login" class="btn btn-outline-success"/>
+<form asp-action="Login" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="UserName" class="control-label"></label>
+        <input asp-for="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" class="control-label"></label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label class="form-check-label">
+            <input asp-for="RememberMe" class="form-check-input" />
+        </label>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Login" class="btn btn-outline-success">
+    </div>
 </form>
+
+
+@section Scripts {
+    @*Enable Client Side Validation*@
+    <partial name="_ValidationScriptsPartial" />
+}

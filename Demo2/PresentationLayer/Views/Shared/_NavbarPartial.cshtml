@@ -16,15 +16,19 @@
                 </li>
 
                 <li class="nav-item">
-                    @if(User.IsInRole(UserRole.Admin) || User.IsInRole(UserRole.Buyer))
+                    @if(User.IsInRole("Buyer"))
                     {
-                        <a class="nav-link text-dark"  asp-controller="Product" asp-action="Create">Create Product</a>
+                        <a class="nav-link text-dark" asp-controller="Product" asp-action="Create">Create Product</a>
                     }
-                    @if(User.IsInRole(UserRole.Customer))
+                    @if(User.IsInRole("Customer"))
                     {
-                        <a class="nav-link text-dark"  asp-controller="Order" asp-action="Create">Create Order</a>
+                        <a class="nav-link text-dark" asp-controller="Order" asp-action="Create">Create Order</a>
                     }
-                    
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="nav-link text-dark" asp-controller="Admin" asp-action="AssignUserRole">Assign User Role</a>
+                    }
+                       
                 </li>
 
                 <li>

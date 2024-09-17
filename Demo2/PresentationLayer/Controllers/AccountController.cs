@@ -1,113 +1,109 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using DataAccessLayer.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using PresentationLayer.Models.Product.VM;
-using System.Security.Claims;
+using NuGet.Packaging.Licenses;
+using PresentationLayer.Models.User;
 
 namespace PresentationLayer.Controllers
 {
     public class AccountController : Controller
     {
-        [HttpGet]
-        public IActionResult Login([FromQuery] string? ReturnUrl)
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
+
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
         {
-            ViewBag.ReturnUrl = ReturnUrl;
-            return View();
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
-        //       /Product/Index
-        //  Redirection ➡️ /Account/Login?returnUrl=/Product/Index
-        //  Redirection ➡️ /Account/Login?returnUrl=/Product/Details/1
-        //  Redirection ➡️ /Account/Login?returnUrl=/Product/Edit/1
-        [HttpPost]
-        public async Task<IActionResult> Login(LoginVM request, string? ReturnUrl)
+        [HttpGet]
+        public IActionResult Register()
         {
-            // HttpContext.User  ➡️➡️ app.UseAuthentication()  fill this property with its value using the cookie coming in the http request
-
-            // HttpContext.User  ➡️➡️ Claim Principal
-
-            // Claim Principal ➡️➡️ Group of Claim Identities ➡️➡️ Group of Claims
-
-
+            return View();
+        }
+        [HttpPost]
+        
+        public async Task<IActionResult> Register(RegisterUserActionRequest newAccount)
+        {
+            //Sara*DEPI9
+            //Maher*DEPI9
+            //Ibrahim*DEPI9
             if (ModelState.IsValid)
             {
-                // Check in Database
-                var user = MyUsers.FirstOrDefault(user => user.Name == request.Name);
-                if (user != null)
+                // Create new Account
+                var user = new User
                 {
-                    Claim c1 = new Claim(ClaimTypes.Name, user.Name);
-                    Claim c2 = new Claim(ClaimTypes.Email, user.Email);
-                    Claim c3 = new Claim(ClaimTypes.Role, user.Role);
+                    UserName = newAccount.UserName,
+                    PasswordHash = newAccount.Password,
+                    Address = newAccount.Address
+                };
 
-                    ClaimsIdentity ci = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
 
-                    ci.AddClaim(c1);
-                    ci.AddClaim(c2);
-                    ci.AddClaim(c3);
 
-                    ClaimsPrincipal cp = new ClaimsPrincipal(ci);
+                // Hashing Algorithm
 
-                    await HttpContext.SignInAsync(cp);
+                // 123 ===> abc
+                // 123xyz  ==> jki
 
-                    // 🚩🚩 Creates a cookie:
-                    //      It serializes the user's identity (ClaimsPrincipal) into an encrypted cookie
-                    //      and stores it on the client (user's browser).  ➡️➡️ // Response.Cookies.Append('user', 'skdokd');
+                // _userManager.CreateAsync(user);
+                // ➡️➡️ this overloads doesnot hash the password ,
+                // doesnot treat it as password and doesnot validate it unless you write custom validation options
+                // while registering identity in program.cs
 
-                    // 🚩🚩 Manages Authentication State:
-                    //      This cookie is sent back to the server with each subsequent request,
-                    //      allowing the server to identify the user and their roles without requiring them to log in again for each request.
+                IdentityResult result = await _userManager.CreateAsync(user, newAccount.Password); // ==> save in database
 
-                    // How the Flow Works After Sign-In
-                    //=================================================
-                    // 1- User Request: The user makes a request(e.g., accesses a secure page).
-
-                    // 2- Authentication Middleware(app.UseAuthentication()): This middleware checks for the presence of an authentication cookie.
-
-                    // 3- Cookie Validation: If a cookie is present, it is validated.If valid, the user's identity is reconstructed from the claims stored in the cookie.
-
-                    // 4- User Is Authenticated: The authenticated user's information is made available via HttpContext.User, which is accessible across the entire request pipeline.
-
-                    // 5- Authorization(if app.UseAuthorization() is also configured): If the application uses app.UseAuthorization(), it will then check whether the authenticated user is authorized to access the requested resource.
-
-                    if(ReturnUrl != null)
+                if (result.Succeeded) // User saved succesfully to database
+                {
+                    // Create a Cookie
+                    await _signInManager.SignInAsync(user, false);
+                    return RedirectToAction("Index", "Product");
+                }
+                else
+                {
+                    foreach (IdentityError error in result.Errors)
                     {
-                        return LocalRedirect(ReturnUrl);
+                        ModelState.AddModelError(error.Code, error.Description);
                     }
-
-                    return RedirectToAction("Index", "Home");
                 }
             }
+            return View(newAccount);
+        }
 
-            ModelState.AddModelError("Invalid Credentials", "Invalid Username or Password");
-
+        [HttpGet]
+        public IActionResult Login()
+        {
             return View();
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginActionRequest request)
+        {
+            if(ModelState.IsValid)
+            {
+                var user = await _userManager.FindByNameAsync(request.UserName);
+
+                if (user != null)
+                {
+                    var isPasswordValid = await _userManager.CheckPasswordAsync(user, request.Password);
+
+                    if (isPasswordValid)
+                    {
+                        // Create a Cookie
+                        await _signInManager.SignInAsync(user, request.RememberMe);
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
+                ModelState.AddModelError("Invalid Credentials", "Username or Password invalid");
+            }
+            return View(request);
         }
 
         [HttpGet]
         public async Task<IActionResult> Logout()
         {
-            if (HttpContext.User.Identity.IsAuthenticated)
-            {
-                await HttpContext.SignOutAsync();
-            }
-            return RedirectToAction("Index", "Home");
+            await _signInManager.SignOutAsync();
+            return RedirectToAction(nameof(Login));
         }
-
-        public static List<UserInfo> MyUsers = new()
-        {
-            new UserInfo("Ahmed", "ahmed@gmail.com", UserRole.Admin),
-            new UserInfo("Ali", "ali@gmail.com", UserRole.Customer),
-            new UserInfo("Sara", "sara@gmail.com", UserRole.Buyer),
-        };
-
-    }
-
-    public record UserInfo(string Name, string Email, string Role);
-
-    public static class UserRole
-    {
-        public const string Admin = "Admin";
-        public const string Customer = "Customer";
-        public const string Buyer = "Buyer";
     }
 }

@@ -5,10 +5,11 @@ using DataAccessLayer.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PresentationLayer.Models;
+using System.Security.Claims;
 
 namespace PresentationLayer.Controllers
 {
-    [Authorize] // Authentication
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
@@ -30,12 +31,21 @@ namespace PresentationLayer.Controllers
         }
         // 🚀/product/index
         [HttpGet]
-        //[Authorize(Roles = "Customer")] // Role-Based AuthoriZation
-        [Authorize(Roles = UserRole.Customer)] // Role-Based AuthoriZation
-
+        [Authorize(Roles = "Customer")]
+        
         // access HttpContext.User ➡️ Claims ➡️ Role
         public async Task<IActionResult> Index()
         {
+
+            // How to access any claim value of the current user
+
+            if(User.Identity.IsAuthenticated) // to avoid null reference exception
+            {
+                //var id = User.Claims.FirstOrDefault(claim => claim.Type == ClaimTypes.NameIdentifier)?.Value;
+                //var id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var id = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
+
             // 2) Call Model
             // ProductSampleData productBL = new ProductSampleData();
             // 3) Model returns Data
@@ -44,6 +54,7 @@ namespace PresentationLayer.Controllers
             List<GetAllProductsDTO> products = await _productService.GetAll();
             // Add(1, 2);
             // 4) Controller sends data to view
+
 
             var productsList = products
                 .Select(productDto => (GetAllProductsVM)productDto)
@@ -58,7 +69,6 @@ namespace PresentationLayer.Controllers
         // 🚀/product/details?id=✔️  ✅  query parameters
         [HttpGet]
         //[AllowAnonymous]
-        [Authorize(Roles = UserRole.Customer)]
         public async Task<IActionResult> Details(int id)
         {
             // 2) Call Model
@@ -80,9 +90,7 @@ namespace PresentationLayer.Controllers
 
         //  /product/create
         [HttpGet]
-        //[Authorize("Admin")] // Role = Admin ✅
-        [Authorize("AdminOrBuyer")] // Role = Admin ✅ or Buyer ✅
-
+        [Authorize(Roles = "Admin,Buyer")]
         public async Task<IActionResult> Create()
         {
             var departments = await _departmentRepository.GetAllAsync();
