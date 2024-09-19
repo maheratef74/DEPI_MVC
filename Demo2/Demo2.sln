@@ -11,13 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer_DatabaseFirst", "DataAccessLayer_DatabaseFirst\DataAccessLayer_DatabaseFirst.csproj", "{09EA46F8-4F36-4467-AE8A-EF9719AED931}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPH", "TPH\TPH.csproj", "{9DF6BF6D-699E-4824-AD23-75EA75567AEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPH", "TPH\TPH.csproj", "{9DF6BF6D-699E-4824-AD23-75EA75567AEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPH_AllHierarchy", "TPH_AllHierarchy\TPH_AllHierarchy.csproj", "{AAE2BEDA-43A3-4DC3-BFE7-346DFD4497E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPH_AllHierarchy", "TPH_AllHierarchy\TPH_AllHierarchy.csproj", "{AAE2BEDA-43A3-4DC3-BFE7-346DFD4497E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPT", "TPT\TPT.csproj", "{FBD23918-2B20-43CD-9976-B9870F504A53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPT", "TPT\TPT.csproj", "{FBD23918-2B20-43CD-9976-B9870F504A53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPT_Ver2", "TPT_Ver2\TPT_Ver2.csproj", "{C2197AB0-62E9-4978-8DAD-3C8B53BEAA7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPT_Ver2", "TPT_Ver2\TPT_Ver2.csproj", "{C2197AB0-62E9-4978-8DAD-3C8B53BEAA7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer.Api", "PresentationLayer.Api\PresentationLayer.Api.csproj", "{A2B9F5E2-4CE0-46E3-980B-D64A37831E71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{C2197AB0-62E9-4978-8DAD-3C8B53BEAA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2197AB0-62E9-4978-8DAD-3C8B53BEAA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2197AB0-62E9-4978-8DAD-3C8B53BEAA7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2B9F5E2-4CE0-46E3-980B-D64A37831E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2B9F5E2-4CE0-46E3-980B-D64A37831E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2B9F5E2-4CE0-46E3-980B-D64A37831E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2B9F5E2-4CE0-46E3-980B-D64A37831E71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
