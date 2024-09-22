@@ -58,8 +58,7 @@ namespace BusinessLayer.Services
             // Get Entity from DB
             var order = await _orderRepository.GetById(updateOrderDto.Id);
             // Update the Entity Properties
-            order.Review = updateOrderDto.Review;
-            order.Rating = updateOrderDto.Rating;
+            await _orderRepository.UpdateOrderRatingAndReview(order, updateOrderDto.Rating, updateOrderDto.Review);
             // Save Changes
             await _orderRepository.SaveChanges();
         }

@@ -39,10 +39,14 @@ namespace DataAccessLayer.Repositories
 
         public async Task<Order?> GetById(int id)
         {
+            // Eager Loading
             return await _dbContext.Orders
+                .Include(order => order.Customer)
                 .Include(order => order.OrderProducts)
                     .ThenInclude(op => op.Product)
                 .FirstOrDefaultAsync(order => order.Id == id);
+
+
             // Orders
             // Left Join OrderProducts
             // Inner Join Products
@@ -84,6 +88,23 @@ namespace DataAccessLayer.Repositories
 
             // _dbContext.Orders.Update(updatedOrder);
             // Update Orders Set    where id = updatedOrder.Id
+        }
+
+        public async Task UpdateOrderRatingAndReview(Order order, int rating, string review)
+        {
+            order.Rating = rating;
+            order.Review = review;
+
+            var trackedEntries = _dbContext.ChangeTracker.Entries();
+
+            foreach (var entityEntry in trackedEntries)
+            {
+                Console.WriteLine($"Entity : {entityEntry.Entity.GetType().Name}, State {entityEntry.State}");
+            }
+
+            var entry = _dbContext.Entry(order);
+
+            Console.WriteLine($"Entity : {entry.Entity.GetType().Name}, State {entry.State}");
         }
     }
 }

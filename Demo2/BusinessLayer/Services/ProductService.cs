@@ -34,6 +34,7 @@ namespace BusinessLayer.Services
         }
         public async  Task<GetProductDetailsDTO?> GetById(int id)
         {
+            throw new Exception("Database Connection is down !");
             var product = await  _productRepository.GetProductById(id);
             if (product != null)
             {
@@ -43,7 +44,7 @@ namespace BusinessLayer.Services
             return null;
 
         }
-        public async Task AddProduct(CreateProductDto productDto)
+        public async Task<Product> AddProduct(CreateProductDto productDto)
         {
             var maxId = await _productRepository.GetMaxId();
 
@@ -61,6 +62,8 @@ namespace BusinessLayer.Services
 
             _productRepository.AddProduct(product);
             //await _productRepository.AddProduct_Concurrency_Async();
+
+            return product;
         }
         public async Task UpdateProduct(UpdateProductDto productDto)
         {

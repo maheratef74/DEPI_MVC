@@ -3,6 +3,7 @@ using BusinessLayer.Services;
 using DataAccessLayer.Context;
 using DataAccessLayer.Repositories;
 using Microsoft.EntityFrameworkCore;
+using PresentationLayer.Api.Middlewares;
 
 namespace PresentationLayer.Api
 {
@@ -15,10 +16,26 @@ namespace PresentationLayer.Api
 
             // Add services to the container.
 
+            var myPolicy = "MyPolicy";
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(name: myPolicy, policy =>
+                {
+                    policy
+                        //.WithOrigins("http://127.0.0.1:5500/", "http://localhost:4200")
+                        //.WithMethods("Get", "Post")
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+            });
+
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 
 
             builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
 
             var connectionString = builder.Configuration.GetConnectionString("EcommerceSystem");
 
@@ -39,6 +56,8 @@ namespace PresentationLayer.Api
             #endregion
             #region PipeLine
 
+            app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -46,6 +65,7 @@ namespace PresentationLayer.Api
                 app.UseSwaggerUI();
             }
 
+            app.UseCors(myPolicy);
             app.UseAuthorization();
 
 

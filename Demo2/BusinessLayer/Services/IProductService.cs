@@ -14,7 +14,7 @@ namespace BusinessLayer.Services
 
         Task<GetProductDetailsDTO?> GetById(int id);
 
-        Task AddProduct(CreateProductDto productDto);
+        Task<Product> AddProduct(CreateProductDto productDto);
 
         Task UpdateProduct(UpdateProductDto productDto);
 

@@ -16,5 +16,6 @@ namespace DataAccessLayer.Repositories
         Task Update(Order updatedOrder);
         Task Delete(int id);
         Task SaveChanges();
+        Task UpdateOrderRatingAndReview(Order order, int rating, string review);
     }
 }
