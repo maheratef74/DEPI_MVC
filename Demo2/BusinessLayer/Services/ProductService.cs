@@ -34,7 +34,7 @@ namespace BusinessLayer.Services
         }
         public async  Task<GetProductDetailsDTO?> GetById(int id)
         {
-            throw new Exception("Database Connection is down !");
+            // throw new Exception("Database Connection is down !");
             var product = await  _productRepository.GetProductById(id);
             if (product != null)
             {

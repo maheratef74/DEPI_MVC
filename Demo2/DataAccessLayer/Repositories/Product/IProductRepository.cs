@@ -1,4 +1,6 @@
-﻿using DataAccessLayer.Entities;
+﻿using DataAccessLayer.Common;
+using DataAccessLayer.Entities;
+using DataAccessLayer.Queries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,5 +22,6 @@ namespace DataAccessLayer.Repositories
         Product? FindProductByName(string name);
         //public void AddProduct_Concurrency();
         //public Task AddProduct_Concurrency_Async();
+        Task<PagedList<Product>> GetProductsAsync(ProductQueryParameters parameters);
     }
 }

@@ -1,5 +1,7 @@
-﻿using DataAccessLayer.Context;
+﻿using DataAccessLayer.Common;
+using DataAccessLayer.Context;
 using DataAccessLayer.Entities;
+using DataAccessLayer.Queries;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Channels;
 
@@ -55,6 +57,7 @@ namespace DataAccessLayer.Repositories
                 product.DepartmentId = updatedProduct.DepartmentId;
             }
 
+            await _dbContext.SaveChangesAsync();
             // _dbContext.Products.Update(updatedProduct);
             // Update Products Set    where id = updatedProduct.Id
         }
@@ -91,6 +94,62 @@ namespace DataAccessLayer.Repositories
         public Product? FindProductByName(string name)
         {
             return _dbContext.Products.FirstOrDefault(product => product.Name == name);
+        }
+
+        public async Task<PagedList<Product>> GetProductsAsync(ProductQueryParameters parameters)
+        {
+            // Build Query
+
+            var query = _dbContext.Products.AsQueryable();
+
+            if(!string.IsNullOrWhiteSpace(parameters.Name))
+            {
+                query = query.Where(p => p.Name.ToLower().Contains(parameters.Name.ToLower()));
+            }
+
+            if (!string.IsNullOrWhiteSpace(parameters.DepartmentName))
+            {
+                query = query.Where(p => p.Department.Name.ToLower().Contains(parameters.DepartmentName.ToLower()));
+            }
+
+            var totalCount = await query.CountAsync();
+
+            if(parameters.SortBy.ToLower() == "name")
+            {
+                query = parameters.SortDesc
+                    ? query.OrderByDescending(p => p.Name)
+                    : query.OrderBy(p => p.Name);
+            }
+
+            if (parameters.SortBy.ToLower() == "price")
+            {
+                query = parameters.SortDesc
+                    ? query.OrderByDescending(p => p.Price)
+                    : query.OrderBy(p => p.Price);
+            }
+
+            // Pagination if only the user sent page no and page size
+
+            if (
+                parameters.PageNo.HasValue && parameters.PageNo.Value > 0 &&
+                parameters.PageSize.HasValue && parameters.PageSize.Value > 0 
+            )
+            {
+                var pageNo = parameters.PageNo.Value;
+                var pageSize = parameters.PageSize.Value;
+
+                query = query
+                    .Skip((pageNo - 1) * pageSize)
+                    .Take(pageSize);
+            }
+
+            var products = await query.ToListAsync();
+
+            return new PagedList<Product>
+            {
+                TotalCount = totalCount,
+                Data = products
+            };
         }
 
 

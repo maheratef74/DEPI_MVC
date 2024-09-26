@@ -20,6 +20,7 @@ namespace DataAccessLayer.Repositories
         public async Task AddOrder(Order order)
         {
             await _dbContext.Orders.AddAsync(order);
+            await _dbContext.SaveChangesAsync();
         }
 
         public async Task Delete(int id)

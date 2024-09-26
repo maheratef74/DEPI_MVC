@@ -1,9 +1,16 @@
 ﻿using BusinessLayer.DTOs;
 using BusinessLayer.Services;
+using DataAccessLayer.Common;
 using DataAccessLayer.Entities;
+using DataAccessLayer.Queries;
+using DataAccessLayer.Repositories;
+using DataAccessLayer.Repositories.GenericProduct;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PresentationLayer.Api.ActionRequests;
+using Serilog;
+using System.Security.Claims;
 
 namespace PresentationLayer.Api.Controllers
 {
@@ -15,19 +22,38 @@ namespace PresentationLayer.Api.Controllers
     {
         private readonly IProductService _productService;
         private readonly IConfiguration _config;
+        private readonly IProductRepository _productRepository;
+        private readonly IGenericProductRepository _genericProductRepository;
+        private readonly ILogger<ProductController> _logger;
 
-        public ProductController(IProductService productService, IConfiguration config)
+        public ProductController(IProductService productService, IConfiguration config, IProductRepository productRepository, IGenericProductRepository genericProductRepository, ILogger<ProductController> logger)
         {
             _productService = productService;
             _config = config;
+            _productRepository = productRepository;
+           _genericProductRepository = genericProductRepository;
+            _logger = logger;
         }
 
         // 🚩🚩 /api/products
         [HttpGet]
+        //[Authorize]
         public async Task<IActionResult> GetAllProducts()
         {
-            var products = await _productService.GetAll();
-            return Ok(products);
+            //try
+            //{
+                throw new Exception("Hiiiiiiiiiiiiiiii");
+                _logger.LogInformation("Getting List Of Products");
+                var products = await _productService.GetAll();
+                return Ok(products);
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    //_logger.LogError(ex.Message);
+            //    return BadRequest(ex.Message);
+            //}
+
         }
 
         // 🚩🚩 /api/products/1
@@ -35,6 +61,7 @@ namespace PresentationLayer.Api.Controllers
         // 🚩🚩 /api/products/3
         //[Route("{id}")]
         [HttpGet("{id:int}", Name = "FindProductById")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetProductById(int id)
         {
             //try
@@ -102,6 +129,8 @@ namespace PresentationLayer.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateProduct([FromForm] CreateProductActionRequest request)
         {
+            var currentUserId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            var currentUserRoleClaims = User.FindAll(ClaimTypes.Role);
             #region Built-in Functionality in Asp .Net Core Api Controller
             // Built-in Functionality in Asp .Net Core Api Controller
 
@@ -147,6 +176,17 @@ namespace PresentationLayer.Api.Controllers
             //var url = $"domain/{product.Id}";
             //var url = Url.Link("FindProductById", new { id = product.Id });
             //return Created(url, productDto);
+        }
+
+
+
+        [HttpGet("paginated")]
+        public async Task<ActionResult<PagedList<Product>>> GetPaginatedProducts([FromQuery] ProductQueryParameters parameters)
+        {
+            //var products = await _productRepository.GetProductsAsync(parameters);
+            //var products = await _productRepository.GetProductsAsync(parameters);
+            var products = await _genericProductRepository.ListAllAsync(p => p.Price, 1, 10, p => p.Department);
+            return Ok(products);
         }
     }
     public class Person
