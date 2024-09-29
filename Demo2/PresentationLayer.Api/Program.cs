@@ -15,6 +15,11 @@ using DataAccessLayer.Repositories.GenericProduct;
 using Serilog;
 using Serilog.Sinks.MSSqlServer;
 using DataAccessLayer.UnitOfWork;
+using PresentationLayer.Api.Filters;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using Microsoft.Extensions.Caching.Distributed;
 
 namespace PresentationLayer.Api
 {
@@ -53,6 +58,17 @@ namespace PresentationLayer.Api
             builder.Services.AddScoped<IGenericProductRepository, GenericProductRepository>();
             builder.Services.AddScoped<ICustomerRepository  , CustomerRepository>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            // Filters
+            builder.Services.AddScoped<IPWhiteListAuthorizationFilter>();
+            builder.Services.AddScoped<LogExecutionTimeFilter>();
+            builder.Services.AddScoped<LogExecutionTimeFilterAsync>();
+
+            builder.Services.AddScoped<RedisCacheResourceFilter>(provider =>
+            {
+                var cache = provider.GetRequiredService<IDistributedCache>();
+                return new RedisCacheResourceFilter(cache, 1);
+            });
 
 
             builder.Services.AddScoped<IProductService, ProductService>();
@@ -100,11 +116,16 @@ namespace PresentationLayer.Api
             builder.Services.AddAuthorization();
 
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers(options =>
+            {
+                // Register the custom exception filter globally using dependency injection
+                options.Filters.Add(typeof(CustomExceptionFilter)); // Register by type
+            });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(options =>
             {
+
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Description = "Jwt Authorization Header using Bearer schema",
@@ -127,6 +148,26 @@ namespace PresentationLayer.Api
                         Array.Empty<string>()
                     }
                 });
+
+            });
+
+
+            builder.Services.AddApiVersioning(options =>
+            {
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                options.DefaultApiVersion = new ApiVersion(1, 0); // v1.0
+                options.ReportApiVersions = true; // Add Api Version in headers to response
+                options.ApiVersionReader = ApiVersionReader.Combine
+                (
+                    new QueryStringApiVersionReader("v"), //?v=1  version in query string
+                    new HeaderApiVersionReader("api-version"), // version in http header
+                    new MediaTypeApiVersionReader("v") // version in media type header
+                );
+            });
+
+            builder.Services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = builder.Configuration["Redis:Configuration"];
             });
 
             var app = builder.Build();

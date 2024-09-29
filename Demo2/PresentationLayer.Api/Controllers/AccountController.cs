@@ -54,6 +54,16 @@ namespace PresentationLayer.Api.Controllers
 
             if(user != null) // user exists
             {
+                var isPasswordValid = await _userManager.CheckPasswordAsync(user , request.Password);
+
+                if(!isPasswordValid)
+                {
+                    return Unauthorized();
+                }
+
+                // To change password
+                // await _userManager.ChangePasswordAsync(user, request.Password, "djiosdj");
+
                 // Create Claims
                 var claims = new List<Claim>()
                 {

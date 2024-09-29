@@ -5,19 +5,25 @@ using DataAccessLayer.Entities;
 using DataAccessLayer.Queries;
 using DataAccessLayer.Repositories;
 using DataAccessLayer.Repositories.GenericProduct;
+using DataAccessLayer.SP_Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
 using PresentationLayer.Api.ActionRequests;
+using PresentationLayer.Api.Filters;
 using Serilog;
 using System.Security.Claims;
+using System.Text.Json;
 
 namespace PresentationLayer.Api.Controllers
 {
     [Route("api/[controller]")]
     //[Route("api/Product")]
-    //[Route("api/[controller]/[action]")]
+    //[Route("api/[controller]/[action]")]+
+    //[Authorize]
     [ApiController]
+    //[ServiceFilter(typeof(LogExecutionTimeFilterAsync))]
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
@@ -25,27 +31,32 @@ namespace PresentationLayer.Api.Controllers
         private readonly IProductRepository _productRepository;
         private readonly IGenericProductRepository _genericProductRepository;
         private readonly ILogger<ProductController> _logger;
+        private readonly IDistributedCache _cache;
 
-        public ProductController(IProductService productService, IConfiguration config, IProductRepository productRepository, IGenericProductRepository genericProductRepository, ILogger<ProductController> logger)
+        public ProductController(IProductService productService, IConfiguration config, IProductRepository productRepository, IGenericProductRepository genericProductRepository, ILogger<ProductController> logger, IDistributedCache cache)
         {
             _productService = productService;
             _config = config;
             _productRepository = productRepository;
            _genericProductRepository = genericProductRepository;
             _logger = logger;
+            _cache = cache;
         }
 
         // 🚩🚩 /api/products
         [HttpGet]
         //[Authorize]
+        //[ServiceFilter(typeof(IPWhiteListAuthorizationFilter))]
+        [ServiceFilter(typeof(RedisCacheResourceFilter))]
         public async Task<IActionResult> GetAllProducts()
         {
             //try
             //{
-                throw new Exception("Hiiiiiiiiiiiiiiii");
-                _logger.LogInformation("Getting List Of Products");
-                var products = await _productService.GetAll();
-                return Ok(products);
+            //throw new Exception("Hiiiiiiiiiiiiiiii");
+            _logger.LogInformation("Getting List Of Products");
+            var products = await _productService.GetAll();
+            //await Task.Delay(1000);
+            return Ok(products);
             //}
             //catch (Exception ex)
             //{
@@ -61,17 +72,33 @@ namespace PresentationLayer.Api.Controllers
         // 🚩🚩 /api/products/3
         //[Route("{id}")]
         [HttpGet("{id:int}", Name = "FindProductById")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetProductById(int id)
         {
             //try
             //{
-                var product = await _productService.GetById(id);
+            var cacheKey = $"Product_{id}_";
+            string serializedProduct;
+            serializedProduct = await _cache.GetStringAsync(cacheKey);
 
-                if (product == null)
-                    return NotFound();
+            if(!string.IsNullOrWhiteSpace(serializedProduct))
+            {
+                var cachedProduct = JsonSerializer.Deserialize<Product>(serializedProduct);
+                return Ok(cachedProduct);
+            }
 
-                return Ok(product);
+            var product = await _productService.GetById(id);
+
+            if (product == null)
+                return NotFound();
+
+            serializedProduct = JsonSerializer.Serialize(product);
+            await _cache.SetStringAsync(cacheKey, serializedProduct, new DistributedCacheEntryOptions()
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
+            });
+
+            return Ok(product);
             //}
             //catch (Exception ex)
             //{
@@ -188,7 +215,21 @@ namespace PresentationLayer.Api.Controllers
             var products = await _genericProductRepository.ListAllAsync(p => p.Price, 1, 10, p => p.Department);
             return Ok(products);
         }
-    }
+
+        [HttpGet("from-stored-proc")]
+        public async Task<ActionResult<PagedList<SP_GetProducts_Model>>> GetProducts_StoredProc(
+            [FromQuery] int pageNumber = 1, 
+            [FromQuery] int pageSize = 10, 
+            [FromQuery] string sortBy = "Name", 
+            [FromQuery] string searchTerm = ""
+        )
+        {
+            //var products = await _productRepository.GetProductsAsync(parameters);
+            //var products = await _productRepository.GetProductsAsync(parameters);
+            var products = await _genericProductRepository.Get_StoredProc(pageNumber, pageSize, sortBy, searchTerm);
+            return Ok(products);
+        }
+    }   
     public class Person
     {
         public int Id { get; set; }
